@@ -1,8 +1,10 @@
 .idea/
 __pycache__/
+.bak/
 *.ipynb
-*.log
-img/*.png
-mmd/*.mmd
-pkl/*.pkl
-convs/*.json
+
+data/**
+!data/.gitkeep
+
+log/**
+!log/.gitkeep

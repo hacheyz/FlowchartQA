@@ -97,23 +97,25 @@ def gen_random_flowchart():
     return Flowchart(type, node_num, nodes, edges)
 
 def gen_mmds(chart_num: int):
+    # first check if the directories exist, if not, create them
+    if not os.path.exists(mmd_dir):
+        os.makedirs(mmd_dir)
+    if not os.path.exists(img_dir):
+        os.makedirs(img_dir)
+    if not os.path.exists(pkl_dir):
+        os.makedirs(pkl_dir)
     for i in range(chart_num):
         flowchart = gen_random_flowchart()
         flowchart.save_mmd(os.path.join(mmd_dir, f"flowchart_{i}.mmd"))
         flowchart.save_pickle(os.path.join(pkl_dir, f"flowchart_{i}.pkl"))
 
 def gen_imgs(chart_num: int):
-    # delete all existing mmds & images
-    for filename in os.listdir("mmd"):
-        os.remove(os.path.join("mmd", filename))
-    for filename in os.listdir("img"):
-        os.remove(os.path.join("img", filename))
     gen_mmds(chart_num)
     if gen_imgs_on:
         st_clk = time.time()
         cnt = 1
         # Configure logging
-        logging.basicConfig(filename=f'flowchart-generation-{datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")}.log', level=logging.INFO, 
+        logging.basicConfig(filename=f'log/flowchart-generation-{date_time}.log', level=logging.INFO, 
                             format='%(asctime)s - %(levelname)s - %(message)s')
 
         for filename in os.listdir(mmd_dir):
