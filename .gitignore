@@ -2,7 +2,7 @@
 __pycache__/
 *.ipynb
 *.log
-img/
-mmd/
-pkl/
-convs/
+img/*.png
+mmd/*.mmd
+pkl/*.pkl
+convs/*.json
