@@ -235,8 +235,8 @@ def build_nextok_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[Li
             reachable = True
         )
         samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-            {"from": "human", "value": nextok_question(node_data[cur_id].name, node_data[next_id].name) + " " + ocr_results[flowchart_id]},
-            {"from": "gpt", "value": reasoning_steps}
+            {"from": "human", "value": nextok_question(node_data[cur_id].name, node_data[next_id].name) + " " + ocr_results[flowchart_id], "type": "1"},
+            {"from": "gpt", "value": reasoning_steps, "ground_truth": ["yes"]}
         ]))
         sample_id += 1
         sampleStatistics.nextok["yes"] += 1
@@ -251,8 +251,8 @@ def build_nextok_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[Li
     )
     next_id = random.choice(next_ids) if next_ids else random.randint(0, node_num - 1)
     samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-        {"from": "human", "value": nextok_question(node_data[cur_id].name, node_data[next_id].name) + " " + ocr_results[flowchart_id]},
-        {"from": "gpt", "value": reasoning_steps}
+        {"from": "human", "value": nextok_question(node_data[cur_id].name, node_data[next_id].name) + " " + ocr_results[flowchart_id], "type": "1"},
+        {"from": "gpt", "value": reasoning_steps, "ground_truth": ["no"]}
     ]))
     sample_id += 1
     sampleStatistics.nextok["no"] += 1
@@ -269,8 +269,8 @@ def build_all_next_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[
             [node_data[i].name for i in next_ids]
         )
         samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-            {"from": "human", "value": allnext_question(node_data[cur_id].name) + " " + ocr_results[flowchart_id]},
-            {"from": "gpt", "value": reasoning_steps}
+            {"from": "human", "value": allnext_question(node_data[cur_id].name) + " " + ocr_results[flowchart_id], "type": "2"},
+            {"from": "gpt", "value": reasoning_steps, "ground_truth": [node_data[i].name for i in next_ids]}
         ]))
         sample_id += 1
         sampleStatistics.allnext[len(next_ids)] += 1
@@ -288,8 +288,8 @@ def build_prev_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[List
             [node_data[i].name for i in prev_ids]
         )
         samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-            {"from": "human", "value": prev_question(node_data[cur_id].name) + " " + ocr_results[flowchart_id]},
-            {"from": "gpt", "value": reasoning_steps}
+            {"from": "human", "value": prev_question(node_data[cur_id].name) + " " + ocr_results[flowchart_id], "type": "3"},
+            {"from": "gpt", "value": reasoning_steps, "ground_truth": [node_data[i].name for i in prev_ids]}
         ]))
         sample_id += 1
         sampleStatistics.prev[len(prev_ids)] += 1
@@ -317,8 +317,8 @@ def build_cond_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[List
             next_ids = cond_answer(matrix, cur_id, value_id)
             if len(next_ids) > 0:
                 samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-                    {"from": "human", "value": cond_question(node_data[cur_id].name, value) + " " + ocr_results[flowchart_id]},
-                    {"from": "gpt", "value": reasoning_steps}
+                    {"from": "human", "value": cond_question(node_data[cur_id].name, value) + " " + ocr_results[flowchart_id], "type": "4"},
+                    {"from": "gpt", "value": reasoning_steps, "ground_truth": [node_data[i].name for i in next_ids]}
                 ]))
                 sample_id += 1
                 sampleStatistics.cond += 1
@@ -348,8 +348,8 @@ def build_valid_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[Lis
     )
     if len(sequence) >= 3 and valid_answer(matrix, sequence):
         samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-            {"from": "human", "value": valid_question("->".join([node_data[node_id].name for node_id in sequence])) + " " + ocr_results[flowchart_id]},
-            {"from": "gpt", "value": reasoning_steps}
+            {"from": "human", "value": valid_question("->".join([node_data[node_id].name for node_id in sequence])) + " " + ocr_results[flowchart_id], "type": "5"},
+            {"from": "gpt", "value": reasoning_steps, "ground_truth": ["yes"]}
         ]))
         sample_id += 1
         sampleStatistics.valid["yes"] += 1
@@ -364,8 +364,8 @@ def build_valid_samples(flowchart_id, sample_id, matrix, node_data) -> Tuple[Lis
         sequence
     )
     samples.append(Sample(sample_id, get_img_path(flowchart_id), [
-        {"from": "human", "value": valid_question("->".join([node_data[node_id].name for node_id in sequence])) + " " + ocr_results[flowchart_id]},
-        {"from": "gpt", "value": reasoning_steps}
+        {"from": "human", "value": valid_question("->".join([node_data[node_id].name for node_id in sequence])) + " " + ocr_results[flowchart_id], "type": "5"},
+        {"from": "gpt", "value": reasoning_steps, "ground_truth": ["no"] if if_valid else ["yes"]}
     ]))
     sample_id += 1
     if if_valid:
@@ -426,7 +426,7 @@ if __name__ == "__main__":
             samples += result[0]
             sample_id = result[1]
 
-    with open(os.path.join(convs_dir, "conversations.json"), "w") as f:
+    with open(os.path.join(convs_dir, "conversations_answers.json"), "w") as f:
         json.dump([sample.to_dict() for sample in samples], f, indent=2)
 
     sampleStatistics.save(os.path.join(convs_dir, "sample_statistics.txt"))

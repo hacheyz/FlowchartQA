@@ -21,12 +21,12 @@ def get_normal_random_int(mean: float, std: float, low: int, high: int) -> int:
 def gen_random_str() -> str:
     """Generate a random string with given length"""
     length = get_normal_random_int(mean=7, std=1.8, low=1, high=16)
-    return ''.join(random.choices("abcdefghijklmnopqrstuvwxyz0123456789", k=length))
+    return ''.join(random.choices(allowed_characters, k=length))
 
 def gen_random_flowchart():
     """Generate a random flowchart"""
     type = 0 if random.random() < 0.8 else 1
-    node_num = get_normal_random_int(mean=6.5, std=1, low=3, high=25)
+    node_num = get_normal_random_int(mean=6.5, std=1, low=3, high=max_node_num)
     node_num = round(np.random.normal(6.5, 1))
     nodes, edges = [], []
     if type == 0:  # non-decision flowchart
@@ -115,7 +115,7 @@ def gen_imgs(chart_num: int):
         st_clk = time.time()
         cnt = 1
         # Configure logging
-        logging.basicConfig(filename=f'log/flowchart-generation-{date_time}.log', level=logging.INFO, 
+        logging.basicConfig(filename=f'log/flowchart-generation-{gen_index}.log', level=logging.INFO, 
                             format='%(asctime)s - %(levelname)s - %(message)s')
 
         for filename in os.listdir(mmd_dir):

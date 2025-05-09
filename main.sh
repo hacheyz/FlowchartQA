@@ -1,0 +1,6 @@
+conda activate tool
+python gen_flowcharts.py
+python gen_ocr_contents.py
+python gen_conversations_cot.py
+python gen_conversations_cot_qa.py
+python extract_qa_from_convs.py

@@ -41,7 +41,7 @@ We will generate a large amount of data about Flowchart Q&A. Possible questions 
 """
 
 def get_img_path(flowchart_id):
-    return os.path.join(img_dir, f"flowchart_{flowchart_id}.png")
+    return os.path.join("img", f"flowchart_{flowchart_id}.png")
 
 # question templates
 def nextok_question(cur_state, next_state):
