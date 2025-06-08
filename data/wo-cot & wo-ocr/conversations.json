@@ -1,0 +1,562 @@
+[
+  {
+    "id": 0,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is zjovqwp, is it possible to take state sbfhcgchqj as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is zjovqwp, is it possible to take state ahftrxc as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is ahftrxc, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "fpvausieyi"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is jfgyqpes, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "none"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is jfgyqpes, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "kafnafqo, sbfhcgchqj"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is fpvausieyi, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "ahftrxc"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence fpvausieyi->zjovqwp->sbfhcgchqj->jfgyqpes a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "img/0.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence jfgyqpes->ahftrxc->fpvausieyi a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is tlpjz, is it possible to take state rcxttih as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is eassztn, is it possible to take state fmxqddto as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is dmtw, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "derpkpmgoy, eassztn"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is rcxttih, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "eassztn"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is rcxttih, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "tlpjz"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is dmtw, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "none"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence fmxqddto->tlpjz->rcxttih a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence dmtw->derpkpmgoy->tlpjz a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "img/1.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is dmtw, what might be the next states when the condition is false?"
+      },
+      {
+        "from": "gpt",
+        "value": "eassztn"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is tvzndr, is it possible to take state bainhmos as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is rjxlgba, is it possible to take state zuggoc as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is rjxlgba, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "yenpzytrsk, opasb"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is tvzndr, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "bainhmos"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is yenpzytrsk, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "rjxlgba"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is opasb, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "yenpzytrsk, rjxlgba"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "img/2.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence bainhmos->tvzndr->rjxlgba->opasb a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is vwcq, is it possible to take state qqbsuce as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is fbtbibmx, is it possible to take state oactgk as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is vwcq, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "qqbsuce, mwxeak"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is yuhssurme, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "fbtbibmx"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is yuhssurme, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "qqbsuce, mwxeak"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is mwxeak, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "vwcq"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence vwcq->mwxeak->yuhssurme->fbtbibmx a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "image": "img/3.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence vwcq->qqbsuce->yuhssurme a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is hryddco, is it possible to take state hpsfq as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is bfgywwjev, is it possible to take state hryddco as the next step?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is bfgywwjev, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "spzrav, hpsfq"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is spzrav, what are the possible next states?"
+      },
+      {
+        "from": "gpt",
+        "value": "rhitblzz, hpsfq"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is hpsfq, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "rhitblzz, bfgywwjev, spzrav, hryddco"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nGiven that the current state is rhitblzz, what states might be the previous states?"
+      },
+      {
+        "from": "gpt",
+        "value": "spzrav"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence rhitblzz->spzrav->hpsfq a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "yes"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "image": "img/4.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the sequence hryddco->rhitblzz->bfgywwjev->hpsfq a valid state sequence?"
+      },
+      {
+        "from": "gpt",
+        "value": "no"
+      }
+    ]
+  }
+]

@@ -3,8 +3,5 @@ __pycache__/
 .bak/
 *.ipynb
 
-data/**
-!data/.gitkeep
-
 log/**
 !log/.gitkeep

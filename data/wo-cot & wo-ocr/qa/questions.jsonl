@@ -1,0 +1,40 @@
+{"question_id": 0, "image": "img/0.png", "text": "Given that the current state is zjovqwp, is it possible to take state sbfhcgchqj as the next step?", "type": 1}
+{"question_id": 1, "image": "img/0.png", "text": "Given that the current state is zjovqwp, is it possible to take state ahftrxc as the next step?", "type": 1}
+{"question_id": 2, "image": "img/0.png", "text": "Given that the current state is ahftrxc, what are the possible next states?", "type": 2}
+{"question_id": 3, "image": "img/0.png", "text": "Given that the current state is jfgyqpes, what are the possible next states?", "type": 2}
+{"question_id": 4, "image": "img/0.png", "text": "Given that the current state is jfgyqpes, what states might be the previous states?", "type": 3}
+{"question_id": 5, "image": "img/0.png", "text": "Given that the current state is fpvausieyi, what states might be the previous states?", "type": 3}
+{"question_id": 6, "image": "img/0.png", "text": "Is the sequence fpvausieyi->zjovqwp->sbfhcgchqj->jfgyqpes a valid state sequence?", "type": 5}
+{"question_id": 7, "image": "img/0.png", "text": "Is the sequence jfgyqpes->ahftrxc->fpvausieyi a valid state sequence?", "type": 5}
+{"question_id": 8, "image": "img/1.png", "text": "Given that the current state is tlpjz, is it possible to take state rcxttih as the next step?", "type": 1}
+{"question_id": 9, "image": "img/1.png", "text": "Given that the current state is eassztn, is it possible to take state fmxqddto as the next step?", "type": 1}
+{"question_id": 10, "image": "img/1.png", "text": "Given that the current state is dmtw, what are the possible next states?", "type": 2}
+{"question_id": 11, "image": "img/1.png", "text": "Given that the current state is rcxttih, what are the possible next states?", "type": 2}
+{"question_id": 12, "image": "img/1.png", "text": "Given that the current state is rcxttih, what states might be the previous states?", "type": 3}
+{"question_id": 13, "image": "img/1.png", "text": "Given that the current state is dmtw, what states might be the previous states?", "type": 3}
+{"question_id": 14, "image": "img/1.png", "text": "Is the sequence fmxqddto->tlpjz->rcxttih a valid state sequence?", "type": 5}
+{"question_id": 15, "image": "img/1.png", "text": "Is the sequence dmtw->derpkpmgoy->tlpjz a valid state sequence?", "type": 5}
+{"question_id": 16, "image": "img/1.png", "text": "Given that the current state is dmtw, what might be the next states when the condition is false?", "type": 4}
+{"question_id": 17, "image": "img/2.png", "text": "Given that the current state is tvzndr, is it possible to take state bainhmos as the next step?", "type": 1}
+{"question_id": 18, "image": "img/2.png", "text": "Given that the current state is rjxlgba, is it possible to take state zuggoc as the next step?", "type": 1}
+{"question_id": 19, "image": "img/2.png", "text": "Given that the current state is rjxlgba, what are the possible next states?", "type": 2}
+{"question_id": 20, "image": "img/2.png", "text": "Given that the current state is tvzndr, what are the possible next states?", "type": 2}
+{"question_id": 21, "image": "img/2.png", "text": "Given that the current state is yenpzytrsk, what states might be the previous states?", "type": 3}
+{"question_id": 22, "image": "img/2.png", "text": "Given that the current state is opasb, what states might be the previous states?", "type": 3}
+{"question_id": 23, "image": "img/2.png", "text": "Is the sequence bainhmos->tvzndr->rjxlgba->opasb a valid state sequence?", "type": 5}
+{"question_id": 24, "image": "img/3.png", "text": "Given that the current state is vwcq, is it possible to take state qqbsuce as the next step?", "type": 1}
+{"question_id": 25, "image": "img/3.png", "text": "Given that the current state is fbtbibmx, is it possible to take state oactgk as the next step?", "type": 1}
+{"question_id": 26, "image": "img/3.png", "text": "Given that the current state is vwcq, what are the possible next states?", "type": 2}
+{"question_id": 27, "image": "img/3.png", "text": "Given that the current state is yuhssurme, what are the possible next states?", "type": 2}
+{"question_id": 28, "image": "img/3.png", "text": "Given that the current state is yuhssurme, what states might be the previous states?", "type": 3}
+{"question_id": 29, "image": "img/3.png", "text": "Given that the current state is mwxeak, what states might be the previous states?", "type": 3}
+{"question_id": 30, "image": "img/3.png", "text": "Is the sequence vwcq->mwxeak->yuhssurme->fbtbibmx a valid state sequence?", "type": 5}
+{"question_id": 31, "image": "img/3.png", "text": "Is the sequence vwcq->qqbsuce->yuhssurme a valid state sequence?", "type": 5}
+{"question_id": 32, "image": "img/4.png", "text": "Given that the current state is hryddco, is it possible to take state hpsfq as the next step?", "type": 1}
+{"question_id": 33, "image": "img/4.png", "text": "Given that the current state is bfgywwjev, is it possible to take state hryddco as the next step?", "type": 1}
+{"question_id": 34, "image": "img/4.png", "text": "Given that the current state is bfgywwjev, what are the possible next states?", "type": 2}
+{"question_id": 35, "image": "img/4.png", "text": "Given that the current state is spzrav, what are the possible next states?", "type": 2}
+{"question_id": 36, "image": "img/4.png", "text": "Given that the current state is hpsfq, what states might be the previous states?", "type": 3}
+{"question_id": 37, "image": "img/4.png", "text": "Given that the current state is rhitblzz, what states might be the previous states?", "type": 3}
+{"question_id": 38, "image": "img/4.png", "text": "Is the sequence rhitblzz->spzrav->hpsfq a valid state sequence?", "type": 5}
+{"question_id": 39, "image": "img/4.png", "text": "Is the sequence hryddco->rhitblzz->bfgywwjev->hpsfq a valid state sequence?", "type": 5}

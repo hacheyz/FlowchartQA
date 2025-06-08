@@ -1,0 +1,11 @@
+--- Flowchart Statistics ---
+Total Flowcharts: 5
+Normal Flowcharts: 4 (80.00%)
+Decision Flowcharts: 1 (20.00%)
+Node Count Distribution: {7: 2, 6: 3}
+  Avg Node Count: 6.4
+Edge Count Distribution: {7: 1, 6: 2, 10: 1, 8: 1}
+  Avg Edge Count: 7.4
+  Avg Edge Density: 1.15
+Decision Node Count Distribution: {0: 4, 1: 1}
+  Avg Decision Node Count: 1.0

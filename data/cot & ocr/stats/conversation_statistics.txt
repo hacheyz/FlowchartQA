@@ -1,0 +1,19 @@
+--- nextok ---
+yes: 5
+no: 5
+all: 10
+--- allnext ---
+[1, 4, 5]
+all: 10
+--- prev ---
+[1, 5, 3, 0, 1]
+all: 10
+--- cond ---
+all: 1
+--- valid ---
+[0, 0, 0, 5, 4]
+yes: 5
+no: 4
+all: 9
+--- all ---
+40
