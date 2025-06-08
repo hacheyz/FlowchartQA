@@ -10,6 +10,8 @@
 This project is designed to generate a synthetic dataset involving flowcharts and conversational question-answer pairs. The generated data can be used for training and evaluating models in areas such as visual question answering, multimodal interaction, and instruction following.
 The conversations data (`conversations.json`) strictly follows the format of  [the LLaVA training data](https://github.com/haotian-liu/LLaVA/blob/main/docs/Finetune_Custom_Data.md). However, you can easily adapt it to other formats by modifying `Sample.to_dict()` method in `sample/sample.py`.
 
+This project is completely **free of using AI-generated content**, ensuring that all generated data is synthetic and does not rely on any pre-existing datasets.
+
 The core functionalities include:
 - Generating various flowchart structures and rendering them as images.
 - Performing OCR on the generated flowchart images to extract text content (optional).
@@ -119,6 +121,8 @@ The generation process is logged into files within the `log/` directory. These l
 
 本项目旨在生成一个包含流程图和对话式问答对的合成数据集。生成的数据可用于训练和评估视觉问答、多模态交互和指令遵循等领域的模型。
 对话数据（`conversations.json`）严格遵循 [LLaVA 训练数据](https://github.com/haotian-liu/LLaVA/blob/main/docs/Finetune_Custom_Data.md)的格式。但是，您可以通过修改 `sample/sample.py` 文件中的 `Sample.to_dict()` 方法轻松地将其调整为其他格式。
+
+本项目完全**不使用 AI 生成的内容**，确保所有生成的数据都是合成的，并且不依赖任何预先存在的数据集。
 
 核心功能包括：
 - 生成各种流程图结构并将其渲染为图像。
